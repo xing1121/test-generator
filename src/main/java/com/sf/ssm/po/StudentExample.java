@@ -21,7 +21,7 @@ public class StudentExample {
 
     /**
      *
-     * @mbggenerated 2018-12-05
+     * @mbggenerated 2019-04-16
      */
     public StudentExample() {
         oredCriteria = new ArrayList<Criteria>();
@@ -29,7 +29,7 @@ public class StudentExample {
 
     /**
      *
-     * @mbggenerated 2018-12-05
+     * @mbggenerated 2019-04-16
      */
     public void setOrderByClause(String orderByClause) {
         this.orderByClause = orderByClause;
@@ -37,7 +37,7 @@ public class StudentExample {
 
     /**
      *
-     * @mbggenerated 2018-12-05
+     * @mbggenerated 2019-04-16
      */
     public String getOrderByClause() {
         return orderByClause;
@@ -45,7 +45,7 @@ public class StudentExample {
 
     /**
      *
-     * @mbggenerated 2018-12-05
+     * @mbggenerated 2019-04-16
      */
     public void setDistinct(boolean distinct) {
         this.distinct = distinct;
@@ -53,7 +53,7 @@ public class StudentExample {
 
     /**
      *
-     * @mbggenerated 2018-12-05
+     * @mbggenerated 2019-04-16
      */
     public boolean isDistinct() {
         return distinct;
@@ -61,7 +61,7 @@ public class StudentExample {
 
     /**
      *
-     * @mbggenerated 2018-12-05
+     * @mbggenerated 2019-04-16
      */
     public List<Criteria> getOredCriteria() {
         return oredCriteria;
@@ -69,7 +69,7 @@ public class StudentExample {
 
     /**
      *
-     * @mbggenerated 2018-12-05
+     * @mbggenerated 2019-04-16
      */
     public void or(Criteria criteria) {
         oredCriteria.add(criteria);
@@ -77,7 +77,7 @@ public class StudentExample {
 
     /**
      *
-     * @mbggenerated 2018-12-05
+     * @mbggenerated 2019-04-16
      */
     public Criteria or() {
         Criteria criteria = createCriteriaInternal();
@@ -87,7 +87,7 @@ public class StudentExample {
 
     /**
      *
-     * @mbggenerated 2018-12-05
+     * @mbggenerated 2019-04-16
      */
     public Criteria createCriteria() {
         Criteria criteria = createCriteriaInternal();
@@ -99,7 +99,7 @@ public class StudentExample {
 
     /**
      *
-     * @mbggenerated 2018-12-05
+     * @mbggenerated 2019-04-16
      */
     protected Criteria createCriteriaInternal() {
         Criteria criteria = new Criteria();
@@ -108,7 +108,7 @@ public class StudentExample {
 
     /**
      *
-     * @mbggenerated 2018-12-05
+     * @mbggenerated 2019-04-16
      */
     public void clear() {
         oredCriteria.clear();
@@ -117,7 +117,7 @@ public class StudentExample {
     }
 
     /**
-     * student 2018-12-05
+     * student 2019-04-16
      */
     protected abstract static class GeneratedCriteria {
         protected List<Criterion> criteria;
@@ -442,7 +442,7 @@ public class StudentExample {
     }
 
     /**
-     * student 2018-12-05
+     * student 2019-04-16
      */
     public static class Criterion {
         private String condition;

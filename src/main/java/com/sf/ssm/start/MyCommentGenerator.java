@@ -38,19 +38,23 @@ public class MyCommentGenerator implements CommentGenerator{
     private Properties systemPro;
     private boolean suppressDate;
     private boolean suppressAllComments;
+    private boolean generateGetterSetter;
     private String currentDateStr;
 
-    private boolean generateGetterSetter = false;
     
     public MyCommentGenerator() {
         super();
         properties = new Properties();
         systemPro = System.getProperties();
+        generateGetterSetter = true;
         suppressDate = false;
         suppressAllComments = false;
         currentDateStr = (new SimpleDateFormat("yyyy-MM-dd")).format(new Date());
     }
 
+    /**
+     * 文件最上方添加注释
+     */
     public void addJavaFileComment(CompilationUnit compilationUnit) {
         // add no file level comments by default
         return;
@@ -117,9 +121,9 @@ public class MyCommentGenerator implements CommentGenerator{
     }
 
     public void addClassComment(InnerClass innerClass, IntrospectedTable introspectedTable) {
-//        if (suppressAllComments) {
-//            return;
-//        }
+        if (suppressAllComments) {
+            return;
+        }
         StringBuilder sb = new StringBuilder();
         innerClass.addJavaDocLine("/**");
         sb.append(" * ");
@@ -135,9 +139,9 @@ public class MyCommentGenerator implements CommentGenerator{
      * 生成类的注释，无法使用，源码调用时写死markAsDoNotDelete为true
      */
 	public void addClassComment(InnerClass innerClass, IntrospectedTable introspectedTable, boolean markAsDoNotDelete) {
-//        if (suppressAllComments) {
-//            return;
-//        }
+        if (suppressAllComments) {
+            return;
+        }
         StringBuilder sb = new StringBuilder();
         innerClass.addJavaDocLine("/**");
         sb.append(" * ");
